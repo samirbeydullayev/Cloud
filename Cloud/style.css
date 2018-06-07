@@ -1,0 +1,80 @@
+body{
+    background-image: url("img/m.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+div{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+}
+div img{
+    width: 100%
+}
+.c1{
+
+    animation-name: c1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.c2{
+    top: 61%;
+    animation-name: c1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+
+
+}
+.c3{
+    animation-name: c1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    left: 25%;
+}
+.c4{
+    animation-name: c2;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+    z-index: -1;
+}
+.c5{
+    animation-name: c2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+    top: 25%;
+    z-index: -1;
+}
+
+.c6{
+    animation-name: c2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    top: 40%;
+    z-index: -1;
+}
+
+
+@keyframes c1{
+    0%{
+        left:-30%;
+    }
+    100%{
+
+        left: 110%;  
+    }
+}
+
+@keyframes c2{
+    0%{
+        right:-30%;
+    }
+    100%{
+
+        right: 110%;  
+    }
+}
